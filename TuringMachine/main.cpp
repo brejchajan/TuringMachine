@@ -95,7 +95,14 @@ int main(int argc, const char * argv[])
     tm->setInputWord("000111", 6);
     Tape *finalTape = tm->evaluate();
     
-    cout << "Turing Machine ended SUCCESSFULLY, with result" << endl;
+    if (finalTape != NULL){
+        cout << "This TM ended SUCCESSFULLY." << endl;
+        finalTape->printTape();
+    }
+    else{
+        cout << "This TM ended UNSUCCESSFULLY" << endl;
+    }
+    
     finalTape->printTape();
     
     

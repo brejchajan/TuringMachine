@@ -25,6 +25,7 @@ public:
     ~TuringMachine();
     Tape *evaluate();
     void setInputWord(const char *word, int wordLength);
+    void setPrintTapeEachStep(bool state);
     void test();
     void testRight();
 private:
@@ -38,7 +39,7 @@ private:
     Tape *tape;
     State *currentState;
     bool deallocNeeded;
-    
+    bool printTapeEachStep;
     void init(set<State> *states, set<char> *inputSymbols, set<char> *tapeSymbols, char blankSymbol, TransitionFunction *deltaFunction, State *initialState, set<State> *endStates);
     bool makeStep();
 };

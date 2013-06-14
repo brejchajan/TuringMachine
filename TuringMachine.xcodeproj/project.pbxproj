@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F12F95E0176649AF00FF404E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12F95DF176649AF00FF404E /* main.cpp */; };
 		F12F95E2176649AF00FF404E /* TuringMachine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F12F95E1176649AF00FF404E /* TuringMachine.1 */; };
+		F12F95EA176649F900FF404E /* TuringMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12F95E8176649F900FF404E /* TuringMachine.cpp */; };
+		F12F95ED176652C800FF404E /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12F95EB176652C800FF404E /* State.cpp */; };
+		F12F95F0176653CD00FF404E /* TransitionFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12F95EE176653CD00FF404E /* TransitionFunction.cpp */; };
+		F12F95F3176654F700FF404E /* Tape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F12F95F1176654F700FF404E /* Tape.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,14 @@
 		F12F95DC176649AF00FF404E /* TuringMachine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TuringMachine; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12F95DF176649AF00FF404E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F12F95E1176649AF00FF404E /* TuringMachine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TuringMachine.1; sourceTree = "<group>"; };
+		F12F95E8176649F900FF404E /* TuringMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuringMachine.cpp; sourceTree = "<group>"; };
+		F12F95E9176649F900FF404E /* TuringMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuringMachine.h; sourceTree = "<group>"; };
+		F12F95EB176652C800FF404E /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		F12F95EC176652C800FF404E /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		F12F95EE176653CD00FF404E /* TransitionFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransitionFunction.cpp; sourceTree = "<group>"; };
+		F12F95EF176653CD00FF404E /* TransitionFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionFunction.h; sourceTree = "<group>"; };
+		F12F95F1176654F700FF404E /* Tape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tape.cpp; sourceTree = "<group>"; };
+		F12F95F2176654F700FF404E /* Tape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tape.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,14 @@
 			children = (
 				F12F95DF176649AF00FF404E /* main.cpp */,
 				F12F95E1176649AF00FF404E /* TuringMachine.1 */,
+				F12F95E8176649F900FF404E /* TuringMachine.cpp */,
+				F12F95E9176649F900FF404E /* TuringMachine.h */,
+				F12F95EB176652C800FF404E /* State.cpp */,
+				F12F95EC176652C800FF404E /* State.h */,
+				F12F95EE176653CD00FF404E /* TransitionFunction.cpp */,
+				F12F95EF176653CD00FF404E /* TransitionFunction.h */,
+				F12F95F1176654F700FF404E /* Tape.cpp */,
+				F12F95F2176654F700FF404E /* Tape.h */,
 			);
 			path = TuringMachine;
 			sourceTree = "<group>";
@@ -118,6 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12F95E0176649AF00FF404E /* main.cpp in Sources */,
+				F12F95EA176649F900FF404E /* TuringMachine.cpp in Sources */,
+				F12F95ED176652C800FF404E /* State.cpp in Sources */,
+				F12F95F0176653CD00FF404E /* TransitionFunction.cpp in Sources */,
+				F12F95F3176654F700FF404E /* Tape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

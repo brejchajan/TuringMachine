@@ -81,10 +81,8 @@ void Tape::setInputWord(const char *word, int wordLength){
     while (currentSize < 2*wordLength){
         this->reallocate();
     }
-    printTape();
     for (int i = 0; i < wordLength; i++){
         tape[position + i] = word[i];
-        printTape();
     }
 }
 

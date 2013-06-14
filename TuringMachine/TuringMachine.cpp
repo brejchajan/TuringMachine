@@ -28,6 +28,7 @@ TuringMachine::TuringMachine(char blankSymbol){
 }
 
 void TuringMachine::init(set<brejchajan::State> *states, set<char> *inputSymbols, set<char> *tapeSymbols, char blankSymbol, brejchajan::TransitionFunction *deltaFunction, brejchajan::State *initialState, set<brejchajan::State> *endStates){
+    this->printTapeEachStep = false;
     this->states = states;
     this->inputSymbols = inputSymbols;
     this->tapeSymbols = tapeSymbols;
@@ -59,10 +60,11 @@ Tape *TuringMachine::evaluate(){
     while (!isFinal){
         bool res = this->makeStep();
         if (!res){
-            cout << "This Turing Machine ended UNSUCCESSFULLY";
-            break;
+            return NULL;
         }
-        this->tape->printTape();
+        if (this->printTapeEachStep){
+            this->tape->printTape();
+        }
         isFinal = endStates->find(*currentState) != endStates->end();
     }
     return tape;
@@ -86,6 +88,10 @@ bool TuringMachine::makeStep(){
     //update current state
     currentState = result->state;
     return true;
+}
+
+void TuringMachine::setPrintTapeEachStep(bool state){
+    this->printTapeEachStep = state;
 }
 
 void TuringMachine::test(){
